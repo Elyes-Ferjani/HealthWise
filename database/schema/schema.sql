@@ -125,6 +125,9 @@ INSERT INTO symptoms(id,symptom) VALUES(30,"skin darkness");
 INSERT INTO symptoms(id,symptom) VALUES(31,"skin tightness");
 INSERT INTO symptoms(id,symptom) VALUES(32,"redness");
 INSERT INTO symptoms(id,symptom) VALUES(33,"whiteness");
+INSERT INTO symptoms(id,symptom) VALUES(34,"burn");
+INSERT INTO symptoms(id,symptom) VALUES(35,"skin discoloration");
+INSERT INTO symptoms(id,symptom) VALUES(36,"bleeding");
 
 /* symptoms and body part */
 
@@ -196,6 +199,243 @@ INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(10,8);
 INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(14,8);
 INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(17,8);
 INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(19,8);
+
+/* esophagus */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,9);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,9);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(17,9);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(34,9);
+
+/* lung */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,10);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(7,10);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(10,10);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(18,10);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(19,10);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(20,10);
+
+/* heart */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,11);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,11);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(20,11);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(21,11);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(22,11);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(25,11);
+
+/* right_arm */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,12);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(4,12);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(9,12);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(14,12);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(29,12);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(30,12);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(31,12);
+
+/* left_arm */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,13);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(4,13);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(9,13);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(14,13);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(26,13);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(29,13);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(30,13);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(31,13);
+
+/* elbows */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,14);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,14);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(23,14);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(31,14);
+
+/* hands */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,15);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,15);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(23,15);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(31,15);
+
+/* fingers */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,16);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,16);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(23,16);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(31,16);
+
+/* liver */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(1,17);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,17);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,17);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(13,17);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(28,17);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(35,17);
+
+/* spleen */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(1,18);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,18);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,18);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(13,18);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(28,18);
+
+/* stomach */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(1,19);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,19);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,19);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(12,19);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(12,19);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(13,19);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(27,19);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(28,19);
+
+/* pancreas */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(1,20);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,20);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,20);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(13,20);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(17,20);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(28,20);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(35,20);
+
+/* gallbladder */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(1,21);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,21);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,21);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(13,21);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(28,21);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(35,21);
+
+/* kidneys */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(1,22);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,22);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,22);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(23,22);
+
+/* small_intestin */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(1,23);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,23);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,23);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(12,23);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(12,23);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(13,23);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(27,23);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(28,23);
+
+/* colon */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(1,24);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,24);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,24);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(12,24);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(12,24);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(13,24);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(27,24);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(28,24);
+
+/* bladder */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,25);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,25);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(4,25);
+
+/* testicules */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,26);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,26);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(4,26);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(14,26);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(36,26);
+
+/* vagina */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,27);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,27);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(4,27);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(14,27);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(36,27);
+
+/* male_genital */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,26);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,26);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(4,26);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(14,26);
+
+/* female_genital */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,26);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,26);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(4,26);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(14,26);
+
+/* anus */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,27);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,27);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(4,27);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(14,27);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(36,27);
+
+/* left_leg */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,28);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(4,28);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(9,28);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(14,28);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(26,28);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(29,28);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(30,28);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(31,28);
+
+/* right_leg */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,29);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(4,29);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(9,29);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(14,29);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(26,29);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(29,29);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(30,29);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(31,29);
+
+/* knee */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,30);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,30);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(23,30);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(31,30);
+
+/* foot */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,31);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,31);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(23,31);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(31,31);
+
+/* heel */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,32);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,32);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(23,32);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(31,32);
+
+/* toes */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,33);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,33);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(23,33);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(31,33);
 
 /* common eye diseases */
 
