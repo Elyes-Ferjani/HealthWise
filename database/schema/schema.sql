@@ -40,14 +40,11 @@ CREATE TABLE commonsymptoms(
     CONSTRAINT FK_bdpartID FOREIGN KEY (bdpart_id) REFERENCES bodypart (id)
 );
 
-CREATE TABLE coolision(
-    symptom_id int NOT NULL,
+CREATE TABLE suspect(
     cause_id int NOT NULL,
-    part_id int NOT NULL,
-    CONSTRAINT FK_symptomID FOREIGN KEY (symptom_id) REFERENCES symptoms(id),
+    symptom_id int NOT NULL,
     CONSTRAINT FK_causeID FOREIGN KEY (cause_id) REFERENCES causes(id),
-    CONSTRAINT FK_bodypartID FOREIGN KEY (part_id) REFERENCES bodypart(id)
-
+    CONSTRAINT FK_symptomID FOREIGN KEY (symptom_id) REFERENCES symptoms(id)
 );
 
 INSERT INTO body(id,part) VALUES(1,"head");
@@ -118,7 +115,7 @@ INSERT INTO symptoms(id,symptom) VALUES(21,"pulses");
 INSERT INTO symptoms(id,symptom) VALUES(22,"fast heart beat");
 INSERT INTO symptoms(id,symptom) VALUES(23,"cold");
 INSERT INTO symptoms(id,symptom) VALUES(24,"dizziness");
-INSERT INTO symptoms(id,symptom) VALUES(25,"ligh head");
+INSERT INTO symptoms(id,symptom) VALUES(25,"light head");
 INSERT INTO symptoms(id,symptom) VALUES(26,"numbness");
 INSERT INTO symptoms(id,symptom) VALUES(27,"gas");
 INSERT INTO symptoms(id,symptom) VALUES(28,"bloat");
@@ -130,6 +127,18 @@ INSERT INTO symptoms(id,symptom) VALUES(33,"whiteness");
 INSERT INTO symptoms(id,symptom) VALUES(34,"burn");
 INSERT INTO symptoms(id,symptom) VALUES(35,"skin discoloration");
 INSERT INTO symptoms(id,symptom) VALUES(36,"bleeding");
+INSERT INTO symptoms(id,symptom) VALUES(37,"blurry vision");
+INSERT INTO symptoms(id,symptom) VALUES(38,"yellowish");
+INSERT INTO symptoms(id,symptom) VALUES(39,"headache");
+INSERT INTO symptoms(id,symptom) VALUES(40,"sensitive to light");
+INSERT INTO symptoms(id,symptom) VALUES(41,"mucus");
+INSERT INTO symptoms(id,symptom) VALUES(42,"bad nighttime vision");
+INSERT INTO symptoms(id,symptom) VALUES(43,"strange feeling");
+INSERT INTO symptoms(id,symptom) VALUES(44,"reduce in vision");
+INSERT INTO symptoms(id,symptom) VALUES(45,"shadow over vision");
+INSERT INTO symptoms(id,symptom) VALUES(46,"watery eye");
+INSERT INTO symptoms(id,symptom) VALUES(47,"tired eye");
+INSERT INTO symptoms(id,symptom) VALUES(48,"nausea");
 
 /* symptoms and body part */
 
@@ -777,3 +786,80 @@ INSERT INTO causes(id,illness,bodyp_id) VALUES(230,"Abscess",24);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(231,"Colitis",24);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(232,"Polyps ",24);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(233,"Colon Cancer",24);
+
+/* symptoms and causes : suspected disease */
+
+/* eye */
+
+/* Macular Degeneration */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(1,6);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(1,37);
+
+/* Cataracts */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(2,6);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(2,37);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(2,39);
+
+/* Glaucoma */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(3,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(3,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(1,6);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(3,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(3,32);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(3,37);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(3,39);
+
+/* Diabetic Retinopathy */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(4,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(4,6);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(4,37);
+
+/* Dry Eyes Syndrome */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(5,32);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(5,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(5,40);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(5,41);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(5,42);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(5,43);
+
+/* Conjunctivitis (Pinkeye) */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(6,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(6,32);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(6,43);
+
+/* Retinal Detachment */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(7,37);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(7,44);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(7,45);
+
+/* Uveitis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(8,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(8,32);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(8,40);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(8,45);
+
+/* Eyestrain */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(9,37);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(9,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(9,40);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(9,46);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(9,47);
+
+/* Night Blindness (Nyctalopia) */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(10,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(10,37);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(10,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(10,40);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(10,46);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(10,47);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(10,48);

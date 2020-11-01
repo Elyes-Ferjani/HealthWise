@@ -7,9 +7,9 @@ const getMainParts = (callback) => {
   let syntax = ` SELECT * FROM body `;
   db.connection.query(syntax, (err, result) => {
     if (err) {
-      callback(err);
+      callback(err,null);
     } else {
-      callback(result);
+      callback(null,result);
     }
   });
 };

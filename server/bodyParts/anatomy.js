@@ -5,10 +5,10 @@ const db = require('../../database/controller/bodyParts/anatomy.js');
 router.get('/',(req,res)=>{
     db.getMainParts((err,result)=>{
         if(err){
-            console.log(err)
+            res.status(500).send(err)
         }else{
             console.log(result)
-            res.status(200).json(result)
+            // res.status(200).json(result)
         }
     })
 })
