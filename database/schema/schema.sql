@@ -28,7 +28,9 @@ CREATE TABLE symptoms(
 CREATE TABLE causes(
     id int NOT NULL AUTO_INCREMENT,
     illness varchar(200) NOT NULL,
-    PRIMARY KEY (id)
+    bodyp_id int NOT NULL,
+    PRIMARY KEY (id),
+    CONSTRAINT FK_bodyID FOREIGN KEY (bodyp_id) REFERENCES bodypart (id)
 );
 
 CREATE TABLE commonsymptoms(
@@ -88,7 +90,7 @@ INSERT INTO bodypart(id,organ,body_id) VALUES(31,"left_leg",3);
 INSERT INTO bodypart(id,organ,body_id) VALUES(32,"right_leg",3);
 INSERT INTO bodypart(id,organ,body_id) VALUES(33,"knees",3);
 INSERT INTO bodypart(id,organ,body_id) VALUES(34,"foot",3);
-INSERT INTO bodypart(id,organ,body_id) VALUES(35,"heal",3);
+INSERT INTO bodypart(id,organ,body_id) VALUES(35,"heel",3);
 INSERT INTO bodypart(id,organ,body_id) VALUES(36,"toes",3);
 
 INSERT INTO symptoms(id,symptom) VALUES(1,"fever");
@@ -437,24 +439,341 @@ INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(3,33);
 INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(23,33);
 INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(31,33);
 
-/* common eye diseases */
+/* common brain problems */
 
-INSERT INTO causes(id,illness) VALUES(1,"Macular Degeneration");
-INSERT INTO causes(id,illness) VALUES(2,"Cataracts");
-INSERT INTO causes(id,illness) VALUES(3,"Glaucoma");
-INSERT INTO causes(id,illness) VALUES(4,"Diabetic Retinopathy");
-INSERT INTO causes(id,illness) VALUES(5,"Dry Eyes Syndrome");
-INSERT INTO causes(id,illness) VALUES(6,"Conjunctivitis (Pinkeye)");
-INSERT INTO causes(id,illness) VALUES(7,"Retinal Detachment");
-INSERT INTO causes(id,illness) VALUES(8,"Uveitis");
-INSERT INTO causes(id,illness) VALUES(9,"Eyestrain");
-INSERT INTO causes(id,illness) VALUES(10,"Night Blindness (Nyctalopia)");
-INSERT INTO causes(id,illness) VALUES(11,"Color Blindness");
-INSERT INTO causes(id,illness) VALUES(12,"Eye Floaters");
-INSERT INTO causes(id,illness) VALUES(13,"Nearsightedness (Myopia)");
-INSERT INTO causes(id,illness) VALUES(14,"Farsightedness (Hypermetropia)");
-INSERT INTO causes(id,illness) VALUES(15,"Astigmatism");
-INSERT INTO causes(id,illness) VALUES(16,"Presbyopia");
-INSERT INTO causes(id,illness) VALUES(17,"Proptosis");
-INSERT INTO causes(id,illness) VALUES(18,"Strabismus (Crossed Eyes)");
-INSERT INTO causes(id,illness) VALUES(19,"Macular Edema");
+INSERT INTO causes(id,illness,bodyp_id) VALUES(20,"Dementias",1);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(21,"cancer",1);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(22,"epilepsy",1);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(23,"stroke",1);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(25,"migrain",1);
+
+/* common eye problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(1,"Macular Degeneration",2);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(2,"Cataracts",2);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(3,"Glaucoma",2);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(4,"Diabetic Retinopathy",2);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(5,"Dry Eyes Syndrome",2);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(6,"Conjunctivitis (Pinkeye)",2);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(7,"Retinal Detachment",2);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(8,"Uveitis",2);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(9,"Eyestrain",2);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(10,"Night Blindness (Nyctalopia)",2);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(11,"Color Blindness",2);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(12,"Eye Floaters",2);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(13,"Nearsightedness (Myopia)",2);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(14,"Farsightedness (Hypermetropia)",2);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(15,"Astigmatism",2);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(16,"Presbyopia",2);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(17,"Proptosis",2);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(18,"Strabismus (Crossed Eyes)",2);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(19,"Macular Edema",2);
+
+/* common ear problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(26,"Balance Disorders",3);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(27,"Cholesteatoma",3);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(28,"Ear Infections",3);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(29,"Ear Ringing (tinnitus)",3);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(30,"Hearing Loss",3);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(31,"Otitis",3);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(32,"Perforated eardrum",3);
+
+/* common nose problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(33,"Sinusitis",4);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(34,"Nasal & Sinus Polyps",4);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(35,"flu",4);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(36,"Smell and Taste Disorders",4);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(37,"Allergy",4);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(38,"Viral Infection",4);
+
+/* common lips problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(39,"Fordyce Glands",5);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(40,"Oral Candidiasis",5);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(41,"Oral Leukoplakia",5);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(42,"Cold Sores (Herpetic Gingivostomatitis)",5);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(43,"Apthous Ulcers",5);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(44,"Oral Lichen Planus",5);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(45,"Mouth Cancer",5);
+
+/* common tongue problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(46,"Down Syndrome",6);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(47,"Tongue Cancer",6);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(48,"Beckwith-Wiedemann Syndrome",6);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(49,"An Overactive Thyroid",6);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(50,"Leukemia",6);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(51,"Anemia",6);
+
+/* common jaw problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(52,"Jaw Fracture",7);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(53,"Dislocated Jaw",7);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(54,"Jaw Fracture",7);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(55,"bruxism (teeth grinding)",7); 
+INSERT INTO causes(id,illness,bodyp_id) VALUES(56,"Wisdom Tooth",7); 
+INSERT INTO causes(id,illness,bodyp_id) VALUES(57,"Jawbone Cancer",7);
+
+/* common neck problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(58,"Neck Fracture (Cervical Vertebrae)",8);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(59,"Neck Sprain",8);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(60,"Pinched Nerve",8);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(61,"Spondylosis, or Arthritis In The Neck",8);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(62,"Whiplash",8);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(63,"Infected Tooth",8);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(64,"Cold or Flu",8);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(65,"Mononucleosis (Mono)",8);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(66,"Cancer",8);
+
+/* common esophagus problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(67,"Achalasia",9);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(68,"Barrett's Esophagus",9);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(69,"Esophageal Cancer",9);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(70,"Gastroesophageal Reflux Disease (GERD)",9);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(71,"Gastroparesis",9);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(72,"Peptic Ulcer Disease",9);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(73,"Swallowing Disorders",9);
+
+/* ccommon lung problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(74,"Asthma",10);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(75,"Pneumothorax",10);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(76,"Bronchitis",10);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(77,"COPD (Chronic Obstructive Pulmonary Disease)",10);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(78,"Lung Cancer",10);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(79,"Pneumonia",10);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(80,"Pulmonary embolus",10);
+
+/* common heart problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(81,"Coronary Artery Disease ( CAD )",11);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(82,"Heart Failure",11);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(83,"Arrhythmia",11);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(84,"Valvular Heart Disease",11);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(85,"Aortic Aneurysms",11);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(86,"Heart Infections",11);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(87,"Heart Problems At Birth",11);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(88,"Heart Attack",11);
+
+/* common right_arm problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(89,"Tendinitis and Bursitis",12);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(90,"Sprains",12);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(91,"Dislocations",12);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(92,"Bone Fractures",12);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(93,"Nerve Problems",12);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(94,"Osteoarthritis",12);
+
+/* common left_arm problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(95,"Tendinitis and Bursitis",13);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(96,"Sprains",13);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(97,"Dislocations",13);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(98,"Bone Fractures",13);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(99,"Nerve Problems",13);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(100,"Osteoarthritis",13);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(101,"High Blood Pressure",13);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(102,"Heart Problems",13);
+
+/* common elbow problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(103,"Arthritis",14);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(104,"Cellulitis",14);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(105,"Tumors",14);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(106,"Ulnar Nerve Entrapment",14);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(107,"Osteochondritis Dissecans",14);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(108,"Tendon Inflammation",14);
+
+/* common hand problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(109,"Carpal Tunnel Syndrome",15);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(110,"Arthritis",15);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(111,"Dupuytren's Disease",15);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(112,"Ganglion Cysts",15);
+
+/* common fingers problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(113,"Carpal Tunnel Syndrome",16);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(114,"Arthritis",16);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(115,"Dupuytren's Disease",16);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(116,"Ganglion Cysts",16);
+
+/* common liver problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(117,"hepatitis A, B, C",17);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(118,"Cirrhosis",17);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(119,"Liver Cancer",17);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(120,"Hemochromatosis",17);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(121,"Wilson Disease",17);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(122,"Fatty Liver Disease",17);
+
+/* common spleen problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(123,"Malaria",18);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(124,"Hodgkin's Disease",18);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(125,"Leukemia",18);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(126,"Heart Failure",18);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(127,"Cirrhosis",18);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(128,"Tumors",18);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(129,"Viral, Bacterial, or Parasitic Infections",18);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(130,"Rheumatoid Arthritis",18);
+
+/* common stomach problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(131,"Rheumatoid Gastroesophageal Reflux Disease (GERD)",19);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(132,"Peptic Ulcer Disease (PUD)",19);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(133,"Stomach Flu",19);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(134,"Gluten Sensitivity and Celiac Disease",19);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(135,"Inflammatory Bowel Disease (IBD)",19);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(136,"Irritable Bowel Syndrome (IBS)",19);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(137,"Constipation",19);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(138,"Stomach Cancer",19);
+
+/* common pancreas problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(139,"Pancreas Malfunction",20);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(140,"Pancreatitis",20);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(141,"EAR",20);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(142,"Cystic Fibrosis",20);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(143,"Pancreatic Cancer",20);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(145,"Diabetes",20);
+
+/* common gallbladder problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(146,"Gallstones",21);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(147,"Cholecystitis",21);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(148,"Choledocholithiasis",21);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(149,"Acalculous Gallbladder Disease",21);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(150,"Biliary Dyskinesia",21);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(151,"Sclerosing Cholangitis",21);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(152,"Gallbladder Cancer",21);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(153,"Gallbladder Polyps",21);
+
+/* common kidneys problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(154,"Chronic kidney disease",22);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(155,"Kidney stones",22);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(156,"Glomerulonephritis",22);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(157,"Polycystic kidney disease",22);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(158,"Urinary tract infections",22);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(159,"Kidney Failure",22);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(160,"Kidney Cancer",22);
+
+/* common small_intestin problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(161,"Celiac Disease",23);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(162,"Crohn's Disease",23);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(163,"Infections",23);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(164,"Intestinal Cancer",23);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(165,"Intestinal Obstruction",23);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(166,"Irritable Bowel Dyndrome",23);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(167,"Ulcers",23);
+
+/* common colon problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(167,"Irritable Bowel Syndrome",24);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(167,"Constipation",24);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(167,"Hemorrhoids",24);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(167,"Abscess",24);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(167,"Colitis",24);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(167,"Polyps ",24);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(167,"Colon Cancer",24);
+
+/* common bladder problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(168,"Cystitis",25);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(169,"Urinary Incontinence",25);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(170,"Interstitial Cstitis",25);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(171,"Overactive Bladder",25);
+
+/* common testicules problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(172,"Epididymitis",26);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(173,"Hydrocele",26);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(174,"Testicular torsion",26);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(175,"Varicocele",26);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(176,"Orchitis",26);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(177,"Spermatocele",26);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(178,"Testicule Cancer",26);
+
+/* common vagina problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(179,"Infections",27);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(180,"chlamydia",27);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(181,"gonorrhoea",27);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(182,"trichomoniasis",27);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(183,"Testicule",27);
+
+/* common male_genital problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(184,"Scrotal Problems",28);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(185,"An Inguinal Hernia",28);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(186,"Hypospadias",28);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(187,"Undescended Testicles (Cryptorchidism)",28);
+
+/* common female_genital problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(188,"Human Papillomavirus (HPV)",29);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(189,"Infection Of The Cervix (Cervicitis)",29);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(190,"Sexually Transmitted Infections (STIs)",29);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(191,"An Object In The Vagina",29);
+
+/* common anus problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(192,"Cancer",30);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(193,"Hemorrhoids",30);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(194,"Fissures ",30);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(195,"Abscesses",30);
+
+/* common left_leg problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(196,"Achilles Tendinitis",31);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(197,"Achilles Tendon Rupture",31);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(198,"Baker's Cyst",31);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(199,"Bone Cancer",31);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(200,"Bursitis",31);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(201,"Ankylosing Spondylitis",31);
+
+/* common right_leg problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(202,"Achilles Tendinitis",32);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(203,"Achilles Tendon Rupture",32);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(204,"Baker's Cyst",32);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(205,"Bone Cancer",32);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(206,"Bursitis",32);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(207,"Ankylosing Spondylitis",32);
+
+/* common knee problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(208,"Osteoarthritis",33);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(209,"Rheumatoid arthritis",33);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(210,"Gout",33);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(211,"Pseudogout",33);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(212,"Septic arthritis",33);
+
+/* common foot problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(213,"Athlete's foot",34);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(214,"Bunions",34);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(215,"Diabetic neuropathy",34);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(216,"Plantar fasciitis",34);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(217,"Corns",34);
+
+/* common heel problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(218,"Achilles Tendinitis",35);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(219,"Bone Tumor",35);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(220,"Bursitis",35);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(221,"Heel Spur",35);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(222,"Osteomyelitis",35);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(223,"Paget's Disease Of Bone",35);
+
+/* common toes problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(224,"Blisters",36);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(225,"Claw toe",36);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(226,"Mallet or Hammer Toe",36);
