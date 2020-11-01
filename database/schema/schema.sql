@@ -30,7 +30,7 @@ CREATE TABLE causes(
     illness varchar(200) NOT NULL,
     bodyp_id int NOT NULL,
     PRIMARY KEY (id),
-    CONSTRAINT FK_bodyID FOREIGN KEY (bodyp_id) REFERENCES bodypart (id)
+    CONSTRAINT FK_bodypID FOREIGN KEY (bodyp_id) REFERENCES bodypart (id)
 );
 
 CREATE TABLE commonsymptoms(
@@ -673,16 +673,6 @@ INSERT INTO causes(id,illness,bodyp_id) VALUES(165,"Intestinal Obstruction",23);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(166,"Irritable Bowel Dyndrome",23);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(167,"Ulcers",23);
 
-/* common colon problems */
-
-INSERT INTO causes(id,illness,bodyp_id) VALUES(167,"Irritable Bowel Syndrome",24);
-INSERT INTO causes(id,illness,bodyp_id) VALUES(167,"Constipation",24);
-INSERT INTO causes(id,illness,bodyp_id) VALUES(167,"Hemorrhoids",24);
-INSERT INTO causes(id,illness,bodyp_id) VALUES(167,"Abscess",24);
-INSERT INTO causes(id,illness,bodyp_id) VALUES(167,"Colitis",24);
-INSERT INTO causes(id,illness,bodyp_id) VALUES(167,"Polyps ",24);
-INSERT INTO causes(id,illness,bodyp_id) VALUES(167,"Colon Cancer",24);
-
 /* common bladder problems */
 
 INSERT INTO causes(id,illness,bodyp_id) VALUES(168,"Cystitis",25);
@@ -777,3 +767,13 @@ INSERT INTO causes(id,illness,bodyp_id) VALUES(223,"Paget's Disease Of Bone",35)
 INSERT INTO causes(id,illness,bodyp_id) VALUES(224,"Blisters",36);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(225,"Claw toe",36);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(226,"Mallet or Hammer Toe",36);
+
+/* common colon problems */
+
+INSERT INTO causes(id,illness,bodyp_id) VALUES(227,"Irritable Bowel Syndrome",24);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(228,"Constipation",24);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(229,"Hemorrhoids",24);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(230,"Abscess",24);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(231,"Colitis",24);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(232,"Polyps ",24);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(233,"Colon Cancer",24);
