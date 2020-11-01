@@ -31,6 +31,13 @@ CREATE TABLE causes(
     PRIMARY KEY (id)
 );
 
+CREATE TABLE commonsymptoms(
+    sympt_id int NOT NULL,
+    bdpart_id int NOT NULL,
+    CONSTRAINT FK_symptID FOREIGN KEY (sympt_id) REFERENCES symptoms (id),
+    CONSTRAINT FK_bdpartID FOREIGN KEY (bdpart_id) REFERENCES bodypart (id)
+);
+
 CREATE TABLE coolision(
     symptom_id int NOT NULL,
     cause_id int NOT NULL,
@@ -116,4 +123,98 @@ INSERT INTO symptoms(id,symptom) VALUES(28,"bloat");
 INSERT INTO symptoms(id,symptom) VALUES(29,"skin redness");
 INSERT INTO symptoms(id,symptom) VALUES(30,"skin darkness");
 INSERT INTO symptoms(id,symptom) VALUES(31,"skin tightness");
+INSERT INTO symptoms(id,symptom) VALUES(32,"redness");
+INSERT INTO symptoms(id,symptom) VALUES(33,"whiteness");
 
+/* symptoms and body part */
+
+/* brain */
+
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(1,1);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(2,1);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(3,1);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(5,1);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(8,1);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(16,1);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(25,1);
+
+/* eye */
+
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(1,2);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(2,2);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(3,2);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(4,2);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(6,2);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(14,2);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(32,2);
+
+/* ears */
+
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(1,3);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(2,3);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(3,3);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(7,3);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(9,3);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(21,3);
+
+/* nose */
+
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(3,4);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(11,4);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(19,4);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(23,4);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(29,4);
+
+/* lips */
+
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(2,5);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(3,5);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(14,5);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(15,5);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(26,5);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(31,5);
+
+/* tongue */
+
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(2,6);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(3,6);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(30,6);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(32,6);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(33,6);
+
+/* jaw */
+
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(2,7);
+INSERT INTO commonsymptoms(sympt_id,bdpart_id) VALUES(4,7);
+
+/* neck */
+
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(2,8);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(3,8);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(9,8);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(10,8);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(14,8);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(17,8);
+INSERT INTO commonsymptions(sympt_id,bdpart_id) VALUES(19,8);
+
+/* common eye diseases */
+
+INSERT INTO causes(id,illness) VALUES(1,"Macular Degeneration");
+INSERT INTO causes(id,illness) VALUES(2,"Cataracts");
+INSERT INTO causes(id,illness) VALUES(3,"Glaucoma");
+INSERT INTO causes(id,illness) VALUES(4,"Diabetic Retinopathy");
+INSERT INTO causes(id,illness) VALUES(5,"Dry Eyes Syndrome");
+INSERT INTO causes(id,illness) VALUES(6,"Conjunctivitis (Pinkeye)");
+INSERT INTO causes(id,illness) VALUES(7,"Retinal Detachment");
+INSERT INTO causes(id,illness) VALUES(8,"Uveitis");
+INSERT INTO causes(id,illness) VALUES(9,"Eyestrain");
+INSERT INTO causes(id,illness) VALUES(10,"Night Blindness (Nyctalopia)");
+INSERT INTO causes(id,illness) VALUES(11,"Color Blindness");
+INSERT INTO causes(id,illness) VALUES(12,"Eye Floaters");
+INSERT INTO causes(id,illness) VALUES(13,"Nearsightedness (Myopia)");
+INSERT INTO causes(id,illness) VALUES(14,"Farsightedness (Hypermetropia)");
+INSERT INTO causes(id,illness) VALUES(15,"Astigmatism");
+INSERT INTO causes(id,illness) VALUES(16,"Presbyopia");
+INSERT INTO causes(id,illness) VALUES(17,"Proptosis");
+INSERT INTO causes(id,illness) VALUES(18,"Strabismus (Crossed Eyes)");
+INSERT INTO causes(id,illness) VALUES(19,"Macular Edema");
