@@ -139,6 +139,26 @@ INSERT INTO symptoms(id,symptom) VALUES(45,"shadow over vision");
 INSERT INTO symptoms(id,symptom) VALUES(46,"watery eye");
 INSERT INTO symptoms(id,symptom) VALUES(47,"tired eye");
 INSERT INTO symptoms(id,symptom) VALUES(48,"nausea");
+INSERT INTO symptoms(id,symptom) VALUES(49,"difficule color distinguishing");
+INSERT INTO symptoms(id,symptom) VALUES(50,"spots move when moving eye");
+INSERT INTO symptoms(id,symptom) VALUES(51,"squinting");
+INSERT INTO symptoms(id,symptom) VALUES(52,"vision loss");
+INSERT INTO symptoms(id,symptom) VALUES(53,"flashes");
+INSERT INTO symptoms(id,symptom) VALUES(54,"double vision");
+INSERT INTO symptoms(id,symptom) VALUES(55,"eyes not moving together");
+INSERT INTO symptoms(id,symptom) VALUES(56,"memory loss");
+INSERT INTO symptoms(id,symptom) VALUES(57,"difficulty concentrating");
+INSERT INTO symptoms(id,symptom) VALUES(58,"confusion");
+INSERT INTO symptoms(id,symptom) VALUES(59,"mood schanges");
+INSERT INTO symptoms(id,symptom) VALUES(60,"fatigue");
+INSERT INTO symptoms(id,symptom) VALUES(61,"lump");
+INSERT INTO symptoms(id,symptom) VALUES(62,"staring spell");
+INSERT INTO symptoms(id,symptom) VALUES(63,"loss of awarness");
+INSERT INTO symptoms(id,symptom) VALUES(64,"anexiety");
+INSERT INTO symptoms(id,symptom) VALUES(65,"deja vu");
+INSERT INTO symptoms(id,symptom) VALUES(66,"out of balance");
+INSERT INTO symptoms(id,symptom) VALUES(67,"hearing loss");
+INSERT INTO symptoms(id,symptom) VALUES(68,"itchy feeling");
 
 /* symptoms and body part */
 
@@ -454,7 +474,8 @@ INSERT INTO causes(id,illness,bodyp_id) VALUES(20,"Dementias",1);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(21,"cancer",1);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(22,"epilepsy",1);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(23,"stroke",1);
-INSERT INTO causes(id,illness,bodyp_id) VALUES(25,"migrain",1);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(24,"Alzheimer",1);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(25,"migraine",1);
 
 /* common eye problems */
 
@@ -863,3 +884,149 @@ INSERT INTO suspect(cause_id,symptom_id) VALUES(10,40);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(10,46);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(10,47);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(10,48);
+
+/* Color Blindness */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(11,49);
+
+/* Eye Floaters */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(12,50);
+
+/* Nearsightedness (Myopia) */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(13,37);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(13,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(13,42);
+
+/* Farsightedness (Hypermetropia) */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(14,37);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(14,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(14,47);
+
+/* Astigmatism */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(15,37);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(15,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(15,42);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(15,51);
+
+/* Presbyopia */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(16,37);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(16,39);
+
+/* Proptosis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(17,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(17,52);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(17,53);
+
+/* Strabismus (Crossed Eyes) */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(18,54);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(18,55);
+
+/* Macular Edema */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(19,37);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(19,52);
+
+/* brain */
+
+/* Dementias */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(20,56);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(20,57);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(20,58);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(20,59);
+
+/* cancer */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(21,8);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(21,10);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(21,35);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(21,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(21,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(21,61);
+
+/* epilepsy */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(22,8);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(22,58);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(22,62);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(22,63);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(22,64);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(22,65);
+
+/* stroke */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(23,24);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(23,26);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(23,43);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(23,58);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(23,62);
+
+/* Alzheimer */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(24,56);
+
+/* migrain */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(25,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(25,37);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(25,39);
+
+/* ear */
+
+/* Balance Disorders */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(26,24);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(26,25);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(26,58);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(26,66);
+
+/* Cholesteatoma */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(27,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(27,24);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(27,26);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(27,67);
+
+/* Ear Infections */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(28,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(28,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(28,41);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(28,67);
+
+/* Ear Ringing (tinnitus) */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(29,7);
+
+/* Hearing Loss */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(30,7);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(30,67);
+
+/* Otitis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(31,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(31,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(31,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(31,7);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(31,66);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(31,67);
+
+/* Perforated eardrum */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(32,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(32,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(32,9);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(32,41);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(32,67);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(32,68);
+
+/* nose */
+
