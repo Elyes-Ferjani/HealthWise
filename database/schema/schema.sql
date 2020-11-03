@@ -109,11 +109,11 @@ INSERT INTO symptoms(id,symptom) VALUES(16,"hallucinations");
 INSERT INTO symptoms(id,symptom) VALUES(17,"hard swallowing");
 
 INSERT INTO symptoms(id,symptom) VALUES(18,"hard breathing");
-INSERT INTO symptoms(id,symptom) VALUES(19,"pelgum");
+INSERT INTO symptoms(id,symptom) VALUES(19,"phlegm");
 INSERT INTO symptoms(id,symptom) VALUES(20,"chest tightness");
 INSERT INTO symptoms(id,symptom) VALUES(21,"pulses");
 INSERT INTO symptoms(id,symptom) VALUES(22,"fast heart beat");
-INSERT INTO symptoms(id,symptom) VALUES(23,"cold");
+INSERT INTO symptoms(id,symptom) VALUES(23,"cold body parts");
 INSERT INTO symptoms(id,symptom) VALUES(24,"dizziness");
 INSERT INTO symptoms(id,symptom) VALUES(25,"light head");
 INSERT INTO symptoms(id,symptom) VALUES(26,"numbness");
@@ -149,7 +149,7 @@ INSERT INTO symptoms(id,symptom) VALUES(55,"eyes not moving together");
 INSERT INTO symptoms(id,symptom) VALUES(56,"memory loss");
 INSERT INTO symptoms(id,symptom) VALUES(57,"difficulty concentrating");
 INSERT INTO symptoms(id,symptom) VALUES(58,"confusion");
-INSERT INTO symptoms(id,symptom) VALUES(59,"mood schanges");
+INSERT INTO symptoms(id,symptom) VALUES(59,"mood changes");
 INSERT INTO symptoms(id,symptom) VALUES(60,"fatigue");
 INSERT INTO symptoms(id,symptom) VALUES(61,"lump");
 INSERT INTO symptoms(id,symptom) VALUES(62,"staring spell");
@@ -159,6 +159,30 @@ INSERT INTO symptoms(id,symptom) VALUES(65,"deja vu");
 INSERT INTO symptoms(id,symptom) VALUES(66,"out of balance");
 INSERT INTO symptoms(id,symptom) VALUES(67,"hearing loss");
 INSERT INTO symptoms(id,symptom) VALUES(68,"itchy feeling");
+INSERT INTO symptoms(id,symptom) VALUES(69,"bad breath");
+INSERT INTO symptoms(id,symptom) VALUES(70,"running nose");
+INSERT INTO symptoms(id,symptom) VALUES(71,"postnasal drip");
+INSERT INTO symptoms(id,symptom) VALUES(72,"loss of taste");
+INSERT INTO symptoms(id,symptom) VALUES(73,"loss of smell");
+INSERT INTO symptoms(id,symptom) VALUES(74,"teeth pain");
+INSERT INTO symptoms(id,symptom) VALUES(75,"lump");
+INSERT INTO symptoms(id,symptom) VALUES(76,"white papules");
+INSERT INTO symptoms(id,symptom) VALUES(77,"gun inflammation");
+INSERT INTO symptoms(id,symptom) VALUES(78,"inflammation");
+INSERT INTO symptoms(id,symptom) VALUES(79,"sensitivity over hot and cold");
+INSERT INTO symptoms(id,symptom) VALUES(80,"ulcer");
+INSERT INTO symptoms(id,symptom) VALUES(81,"teeth loss");
+INSERT INTO symptoms(id,symptom) VALUES(82,"small hands and feet");
+INSERT INTO symptoms(id,symptom) VALUES(83,"white spots");
+INSERT INTO symptoms(id,symptom) VALUES(84,"tongue stick out of mouth");
+INSERT INTO symptoms(id,symptom) VALUES(85,"large tongue");
+INSERT INTO symptoms(id,symptom) VALUES(86,"hypoglycemia");
+INSERT INTO symptoms(id,symptom) VALUES(87,"nervousness");
+INSERT INTO symptoms(id,symptom) VALUES(88,"difficulty sleeping");
+INSERT INTO symptoms(id,symptom) VALUES(89,"heat sensitivity");
+INSERT INTO symptoms(id,symptom) VALUES(90,"weight loss");
+INSERT INTO symptoms(id,symptom) VALUES(91,"chest pain");
+INSERT INTO symptoms(id,symptom) VALUES(92,"pale skin");
 
 /* symptoms and body part */
 
@@ -568,7 +592,7 @@ INSERT INTO causes(id,illness,bodyp_id) VALUES(71,"Gastroparesis",9);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(72,"Peptic Ulcer Disease",9);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(73,"Swallowing Disorders",9);
 
-/* ccommon lung problems */
+/* common lung problems */
 
 INSERT INTO causes(id,illness,bodyp_id) VALUES(74,"Asthma",10);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(75,"Pneumothorax",10);
@@ -1029,4 +1053,154 @@ INSERT INTO suspect(cause_id,symptom_id) VALUES(32,67);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(32,68);
 
 /* nose */
+
+/* Sinusitis */
+INSERT INTO suspect(cause_id,symptom_id) VALUES(33,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(33,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(33,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(33,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(33,19);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(33,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(33,41);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(33,69);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(33,74);
+
+/* Nasal & Sinus Polyps */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(34,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(34,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(34,70);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(34,71);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(34,72);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(34,73);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(34,74);
+
+/* flu */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(35,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(35,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(35,4);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(35,10);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(35,11);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(35,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(35,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(35,70);
+
+/* Smell and Taste Disorders */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(36,72);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(36,73);
+
+/* Allergy */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(37,11);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(37,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(37,32);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(37,43);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(37,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(37,48);
+
+/* Viral Infection */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(38,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(38,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(38,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(38,40);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(38,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(38,58);
+
+/* lip */
+
+/* Fordyce Glands */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(39,75);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(39,76);
+
+/* Oral Candidiasis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(40,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(40,17);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(40,32);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(40,72);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(40,76);
+
+/* Oral Leukoplakia */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(41,32);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(41,76);
+
+/* Cold Sores */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(42,75);
+
+/* Apthous Ulcers */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(43,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(43,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(43,17);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(43,75);
+
+/* Oral Lichen Planus */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(44,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(44,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(44,77);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(44,79);
+
+/* Mouth Cancer */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(45,26);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(45,75);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(45,80);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(45,81);
+
+/* tongue */
+
+/* Down Syndrome */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(46,82);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(46,83);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(46,84);
+
+/* Tongue Cancer */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(47,33);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(47,36);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(47,76);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(47,80);
+
+/* Beckwith-Wiedemann Syndrome */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(48,85);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(48,86);
+
+/* An Overactive Thyroid */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(49,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(49,59);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(49,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(49,87);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(49,88);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(49,89);
+
+/* Leukemia */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(50,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(50,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(50,36);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(50,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(50,90);
+
+/* Anemia */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(51,18);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(51,23);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(51,24);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(51,25);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(51,91);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(51,92);
+
+/* jaw */
+
+/* Jaw Fracture */
 
