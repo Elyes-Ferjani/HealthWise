@@ -167,7 +167,7 @@ INSERT INTO symptoms(id,symptom) VALUES(73,"loss of smell");
 INSERT INTO symptoms(id,symptom) VALUES(74,"teeth pain");
 INSERT INTO symptoms(id,symptom) VALUES(75,"lump");
 INSERT INTO symptoms(id,symptom) VALUES(76,"white papules");
-INSERT INTO symptoms(id,symptom) VALUES(77,"gun inflammation");
+INSERT INTO symptoms(id,symptom) VALUES(77,"gum inflammation");
 INSERT INTO symptoms(id,symptom) VALUES(78,"inflammation");
 INSERT INTO symptoms(id,symptom) VALUES(79,"sensitivity over hot and cold");
 INSERT INTO symptoms(id,symptom) VALUES(80,"ulcer");
@@ -183,6 +183,20 @@ INSERT INTO symptoms(id,symptom) VALUES(89,"heat sensitivity");
 INSERT INTO symptoms(id,symptom) VALUES(90,"weight loss");
 INSERT INTO symptoms(id,symptom) VALUES(91,"chest pain");
 INSERT INTO symptoms(id,symptom) VALUES(92,"pale skin");
+INSERT INTO symptoms(id,symptom) VALUES(93,"problem talking or chewing");
+INSERT INTO symptoms(id,symptom) VALUES(94,"drooling");
+INSERT INTO symptoms(id,symptom) VALUES(95,"ear infection");
+INSERT INTO symptoms(id,symptom) VALUES(96,"earache");
+INSERT INTO symptoms(id,symptom) VALUES(97,"disrupted sleep");
+INSERT INTO symptoms(id,symptom) VALUES(98,"difficulty opening the mouth");
+INSERT INTO symptoms(id,symptom) VALUES(99,"weekness");
+INSERT INTO symptoms(id,symptom) VALUES(100,"decrease feeling in arms or legs");
+INSERT INTO symptoms(id,symptom) VALUES(101,"grinding or popping noise");
+INSERT INTO symptoms(id,symptom) VALUES(102,"lymph nodes swollen");
+INSERT INTO symptoms(id,symptom) VALUES(103,"swollen liver or spleen");
+INSERT INTO symptoms(id,symptom) VALUES(104,"rash");
+INSERT INTO symptoms(id,symptom) VALUES(105,"sore throat");
+INSERT INTO symptoms(id,symptom) VALUES(106,"voice hoarseness");
 
 /* symptoms and body part */
 
@@ -565,7 +579,7 @@ INSERT INTO causes(id,illness,bodyp_id) VALUES(51,"Anemia",6);
 
 INSERT INTO causes(id,illness,bodyp_id) VALUES(52,"Jaw Fracture",7);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(53,"Dislocated Jaw",7);
-INSERT INTO causes(id,illness,bodyp_id) VALUES(54,"Jaw Fracture",7);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(54,"Cleft Palate",7);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(55,"bruxism (teeth grinding)",7); 
 INSERT INTO causes(id,illness,bodyp_id) VALUES(56,"Wisdom Tooth",7); 
 INSERT INTO causes(id,illness,bodyp_id) VALUES(57,"Jawbone Cancer",7);
@@ -580,7 +594,7 @@ INSERT INTO causes(id,illness,bodyp_id) VALUES(62,"Whiplash",8);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(63,"Infected Tooth",8);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(64,"Cold or Flu",8);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(65,"Mononucleosis (Mono)",8);
-INSERT INTO causes(id,illness,bodyp_id) VALUES(66,"Cancer",8);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(66,"Neck Cancer",8);
 
 /* common esophagus problems */
 
@@ -1203,4 +1217,115 @@ INSERT INTO suspect(cause_id,symptom_id) VALUES(51,92);
 /* jaw */
 
 /* Jaw Fracture */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(52,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(52,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(52,14);
+
+/* Dislocated Jaw */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(53,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(53,93);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(53,94);
+
+/* cleft palate */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(54,17);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(54,93);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(54,95);
+
+/* bruxism */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(55,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(55,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(55,96);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(55,97);
+
+/* Wisdom Tooth */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(56,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(56,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(56,77);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(56,98);
+
+/* Jawbone Cancer */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(57,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(57,81);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(57,98);
+
+/* neck */
+
+/* Neck Fracture */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(58,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(58,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(58,99);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(58,100);
+
+/* Neck Sprain */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(59,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(59,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(59,99);
+
+/* Pinched Nerve */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(60,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(60,4);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(60,26);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(60,99);
+
+/* Spondylosis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(61,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(61,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(61,101);
+
+/* Whiplash */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(62,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(62,39);
+
+/* Infected Tooth */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(63,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(63,4);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(63,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(63,79);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(63,102);
+
+/* Flu */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(64,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(64,10);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(64,11);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(64,17);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(64,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(64,41);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(64,102);
+
+/* Mononucleosis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(65,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(65,4);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(65,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(65,102);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(65,103);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(65,104);
+
+/* Neck Cancer */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(66,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(66,33);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(66,69);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(66,71);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(66,75);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(66,84);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(66,105);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(66,106);
+
+
+
+
 
