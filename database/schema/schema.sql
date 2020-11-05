@@ -111,7 +111,7 @@ INSERT INTO symptoms(id,symptom) VALUES(17,"hard swallowing");
 INSERT INTO symptoms(id,symptom) VALUES(18,"hard breathing");
 INSERT INTO symptoms(id,symptom) VALUES(19,"phlegm");
 INSERT INTO symptoms(id,symptom) VALUES(20,"chest tightness");
-INSERT INTO symptoms(id,symptom) VALUES(21,"pulses");
+INSERT INTO symptoms(id,symptom) VALUES(21,"palpitations");
 INSERT INTO symptoms(id,symptom) VALUES(22,"fast heart beat");
 INSERT INTO symptoms(id,symptom) VALUES(23,"cold body parts");
 INSERT INTO symptoms(id,symptom) VALUES(24,"dizziness");
@@ -197,6 +197,21 @@ INSERT INTO symptoms(id,symptom) VALUES(103,"swollen liver or spleen");
 INSERT INTO symptoms(id,symptom) VALUES(104,"rash");
 INSERT INTO symptoms(id,symptom) VALUES(105,"sore throat");
 INSERT INTO symptoms(id,symptom) VALUES(106,"voice hoarseness");
+INSERT INTO symptoms(id,symptom) VALUES(107,"heartburn");
+INSERT INTO symptoms(id,symptom) VALUES(108,"choking on food");
+INSERT INTO symptoms(id,symptom) VALUES(109,"sensation of lump in throat");
+INSERT INTO symptoms(id,symptom) VALUES(110,"loss of appetite");
+INSERT INTO symptoms(id,symptom) VALUES(111,"blood in stool");
+INSERT INTO symptoms(id,symptom) VALUES(112,"feeling faint");
+INSERT INTO symptoms(id,symptom) VALUES(113,"drooling");
+INSERT INTO symptoms(id,symptom) VALUES(114,"tight chest");
+INSERT INTO symptoms(id,symptom) VALUES(115,"shortness of breath");
+INSERT INTO symptoms(id,symptom) VALUES(116,"fast breathing");
+INSERT INTO symptoms(id,symptom) VALUES(117,"wheezing");
+INSERT INTO symptoms(id,symptom) VALUES(118,"chest infection");
+INSERT INTO symptoms(id,symptom) VALUES(119,"bloody cough");
+INSERT INTO symptoms(id,symptom) VALUES(120,"sweating");
+INSERT INTO symptoms(id,symptom) VALUES(121,"irregular heartbeat");
 
 /* symptoms and body part */
 
@@ -1325,7 +1340,129 @@ INSERT INTO suspect(cause_id,symptom_id) VALUES(66,84);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(66,105);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(66,106);
 
+/* upper body */
 
+/* esophagus */
 
+/* Achalasia */
 
+INSERT INTO suspect(cause_id,symptom_id) VALUES(67,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(67,10);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(67,78);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(67,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(67,107);
+
+/* Barrett's Esophagus */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(68,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(68,17);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(68,107);
+
+/* Esophageal Cancer */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(69,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(69,10);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(69,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(69,17);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(69,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(69,106);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(69,108);
+
+/* Gastroesophageal Reflux Disease */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(70,17);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(70,107);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(70,109);
+
+/* Gastroparesis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(71,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(71,28);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(71,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(71,107);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(71,110);
+
+/* Peptic Ulcer Disease */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(72,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(72,18);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(72,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(72,110);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(72,111);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(72,112);
+
+/* Swallowing Disorders */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(73,17);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(73,107);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(73,108);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(73,113);
+
+/* lung */
+
+/* Asthma */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(74,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(74,10);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(74,114);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(74,115);
+
+/* Pneumothorax */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(75,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(75,22);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(75,35);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(75,115);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(75,116);
+
+/* Bronchitis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(76,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(76,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(76,10);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(76,41);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(76,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(76,115);
+
+/* COPD */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(77,10);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(77,19);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(77,116);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(77,117);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(77,118);
+
+/* Lung Cancer */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(78,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(78,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(78,4);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(78,10);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(78,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(78,118);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(78,119);
+
+/* Pneumonia */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(79,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(79,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(79,22);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(79,35);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(79,115);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(79,116);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(79,120);
+
+/* Pulmonary embolus */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(80,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(80,10);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(80,21);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(80,64);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(80,119);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(80,120);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(80,121);
+
+/* heart */
+
+/* Coronary Artery Disease */
 
