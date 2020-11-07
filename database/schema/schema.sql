@@ -189,7 +189,7 @@ INSERT INTO symptoms(id,symptom) VALUES(95,"ear infection");
 INSERT INTO symptoms(id,symptom) VALUES(96,"earache");
 INSERT INTO symptoms(id,symptom) VALUES(97,"disrupted sleep");
 INSERT INTO symptoms(id,symptom) VALUES(98,"difficulty opening the mouth");
-INSERT INTO symptoms(id,symptom) VALUES(99,"weekness");
+INSERT INTO symptoms(id,symptom) VALUES(99,"weakness");
 INSERT INTO symptoms(id,symptom) VALUES(100,"decrease feeling in arms or legs");
 INSERT INTO symptoms(id,symptom) VALUES(101,"grinding or popping noise");
 INSERT INTO symptoms(id,symptom) VALUES(102,"lymph nodes swollen");
@@ -212,6 +212,17 @@ INSERT INTO symptoms(id,symptom) VALUES(118,"chest infection");
 INSERT INTO symptoms(id,symptom) VALUES(119,"bloody cough");
 INSERT INTO symptoms(id,symptom) VALUES(120,"sweating");
 INSERT INTO symptoms(id,symptom) VALUES(121,"irregular heartbeat");
+INSERT INTO symptoms(id,symptom) VALUES(122,"weight gain or loss");
+INSERT INTO symptoms(id,symptom) VALUES(123,"swollen ankles or feet");
+INSERT INTO symptoms(id,symptom) VALUES(124,"sever and sudden pain in tummy");
+INSERT INTO symptoms(id,symptom) VALUES(125,"feeling a pop in joints");
+INSERT INTO symptoms(id,symptom) VALUES(126,"bruises");
+INSERT INTO symptoms(id,symptom) VALUES(127,"loss of ability to move");
+INSERT INTO symptoms(id,symptom) VALUES(128,"joint tenderness");
+INSERT INTO symptoms(id,symptom) VALUES(129,"stiffness");
+INSERT INTO symptoms(id,symptom) VALUES(130,"tenderness");
+INSERT INTO symptoms(id,symptom) VALUES(131,"blisters");
+INSERT INTO symptoms(id,symptom) VALUES(132,"tingling");
 
 /* symptoms and body part */
 
@@ -1466,3 +1477,212 @@ INSERT INTO suspect(cause_id,symptom_id) VALUES(80,121);
 
 /* Coronary Artery Disease */
 
+INSERT INTO suspect(cause_id,symptom_id) VALUES(81,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(81,25);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(81,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(81,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(81,114);
+
+/* Heart Failure */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(82,10);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(82,22);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(82,28);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(82,58);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(82,110);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(82,120);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(82,122);
+
+/* Arrhythmia */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(83,18);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(83,21);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(83,24);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(83,115);
+
+/* Valvular Heart Disease */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(84,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(84,21);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(84,25);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(84,123);
+
+/* Aortic Aneurysms */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(85,22);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(85,24);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(85,25);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(85,120);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(85,124);
+
+/* Heart Infections */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(86,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(86,10);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(86,99);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(86,104);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(86,115);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(86,123);
+
+/* Heart Problems At Birth */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(87,22);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(87,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(87,116);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(87,123);
+
+/* Heart Attack */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(88,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(88,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(88,64);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(88,91);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(88,99);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(88,115);
+
+/* right_arm  */
+
+/* Tendinitis and Bursitis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(89,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(89,29);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(89,60);
+
+/* Sprains */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(90,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(90,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(90,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(90,125);
+
+/* Dislocations */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(91,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(91,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(91,126);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(91,127);
+
+/* Bone Fractures */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(92,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(92,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(92,26);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(92,36);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(92,126);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(92,127);
+
+/* Nerve Problems */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(93,26);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(93,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(93,54);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(93,56);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(93,99);
+
+/* Osteoarthritis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(94,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(94,128);
+
+/* left_arm  */
+
+/* Tendinitis and Bursitis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(95,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(95,29);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(95,60);
+
+/* Sprains */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(96,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(96,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(96,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(96,125);
+
+/* Dislocations */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(97,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(97,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(97,126);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(97,127);
+
+/* Bone Fractures */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(98,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(98,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(98,26);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(98,36);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(98,126);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(98,127);
+
+/* Nerve Problems */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(99,26);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(99,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(99,54);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(99,56);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(99,99);
+
+/* Osteoarthritis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(100,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(100,128);
+
+/* High Blood Pressure */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(101,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(101,18);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(101,24);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(101,26);
+
+/* Heart Problems */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(102,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(102,22);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(102,26);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(102,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(102,116);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(102,123);
+
+/* elbow */
+
+/* Arthritis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(103,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(103,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(103,29);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(103,129);
+
+/* Cellulitis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(104,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(104,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(104,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(104,29);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(104,130);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(104,131);
+
+/* Tumors */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(105,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(105,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(105,61);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(105,90);
+
+/* Ulnar Nerve Entrapment */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(106,99);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(106,130);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(106,132);
+
+/* Osteochondritis Dissecans */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(107,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(107,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(107,101);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(107,130);
+
+/* Tendon Inflammation */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(108,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(108,4);
