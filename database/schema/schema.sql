@@ -223,6 +223,20 @@ INSERT INTO symptoms(id,symptom) VALUES(129,"stiffness");
 INSERT INTO symptoms(id,symptom) VALUES(130,"tenderness");
 INSERT INTO symptoms(id,symptom) VALUES(131,"blisters");
 INSERT INTO symptoms(id,symptom) VALUES(132,"tingling");
+INSERT INTO symptoms(id,symptom) VALUES(133,"inflammation");
+INSERT INTO symptoms(id,symptom) VALUES(134,"restricted movement of joint");
+INSERT INTO symptoms(id,symptom) VALUES(135,"skin thickness");
+INSERT INTO symptoms(id,symptom) VALUES(136,"loss of mobility");
+INSERT INTO symptoms(id,symptom) VALUES(137,"dark urine");
+INSERT INTO symptoms(id,symptom) VALUES(138,"vomiting blood");
+INSERT INTO symptoms(id,symptom) VALUES(139,"loss of sex drive");
+INSERT INTO symptoms(id,symptom) VALUES(140,"bruising easily");
+INSERT INTO symptoms(id,symptom) VALUES(141,"joint pain");
+INSERT INTO symptoms(id,symptom) VALUES(142,"erectile dysfunction");
+INSERT INTO symptoms(id,symptom) VALUES(143,"irregular periods or absent periods");
+INSERT INTO symptoms(id,symptom) VALUES(144,"problem with speech or swallowing");
+INSERT INTO symptoms(id,symptom) VALUES(145,"edema");
+INSERT INTO symptoms(id,symptom) VALUES(146,"diarrhea");
 
 /* symptoms and body part */
 
@@ -1686,3 +1700,189 @@ INSERT INTO suspect(cause_id,symptom_id) VALUES(107,130);
 
 INSERT INTO suspect(cause_id,symptom_id) VALUES(108,2);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(108,4);
+
+/* hand */
+
+/* Carpal Tunnel Syndrome */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(109,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(109,26);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(109,99);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(109,132);
+
+/* Arthritis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(110,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(110,29);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(110,99);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(110,133);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(110,134);
+
+/* Dupuytren's Disease */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(111,61);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(111,135);
+
+/* Ganglion Cysts */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(112,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(112,26);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(112,132);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(112,136);
+
+/* fingers */
+
+/* Carpal Tunnel Syndrome */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(113,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(113,26);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(113,99);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(113,132);
+
+/* Arthritis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(114,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(114,29);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(114,99);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(114,133);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(114,134);
+
+/* Dupuytren's Disease */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(115,61);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(115,135);
+
+/* Ganglion Cysts */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(116,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(116,26);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(116,132);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(116,136);
+
+/* liver */
+
+/* hepatitis A, B, C */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(117,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(117,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(117,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(117,38);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(117,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(117,99);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(117,110);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(117,111);
+
+/* Cirrhosis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(118,38);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(118,68);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(118,103);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(118,137);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(118,138);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(118,139);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(118,140);
+
+/* Liver Cancer */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(119,38);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(119,68);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(119,83);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(119,99);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(119,110);
+
+/* Hemochromatosis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(120,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(120,99);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(120,141);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(120,142);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(120,143);
+
+/* Wilson Disease */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(121,38);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(121,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(121,110);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(121,144);
+
+/* Fatty Liver Disease */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(122,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(122,38);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(122,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(122,99);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(122,110);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(122,145);
+
+/* spleen */
+
+/* Malaria */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(123,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(123,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(123,38);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(123,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(123,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(123,146);
+
+/* Hodgkin's Disease */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(124,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(124,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(124,68);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(124,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(124,120);
+
+/* Leukemia */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(125,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(125,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(125,36);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(125,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(125,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(125,140);
+
+/* Heart Failure */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(126,10);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(126,22);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(126,24);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(126,28);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(126,58);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(126,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(126,110);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(126,117);
+
+/* Cirrhosis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(127,38);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(127,68);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(127,103);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(127,137);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(127,138);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(127,139);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(127,140);
+
+/* Tumors */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(128,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(128,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(128,61);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(128,90);
+
+/* Viral, Bacterial, or Parasitic Infections */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(129,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(129,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(129,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(129,48);
+
+/* Rheumatoid Arthritis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(130,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(130,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(130,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(130,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(130,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(130,99);
+
