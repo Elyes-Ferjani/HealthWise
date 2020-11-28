@@ -112,7 +112,7 @@ INSERT INTO symptoms(id,symptom) VALUES(18,"hard breathing");
 INSERT INTO symptoms(id,symptom) VALUES(19,"phlegm");
 INSERT INTO symptoms(id,symptom) VALUES(20,"chest tightness");
 INSERT INTO symptoms(id,symptom) VALUES(21,"palpitations");
-INSERT INTO symptoms(id,symptom) VALUES(22,"fast heart beat");
+INSERT INTO symptoms(id,symptom) VALUES(22,"fast heartbeat");
 INSERT INTO symptoms(id,symptom) VALUES(23,"cold body parts");
 INSERT INTO symptoms(id,symptom) VALUES(24,"dizziness");
 INSERT INTO symptoms(id,symptom) VALUES(25,"light head");
@@ -237,6 +237,11 @@ INSERT INTO symptoms(id,symptom) VALUES(143,"irregular periods or absent periods
 INSERT INTO symptoms(id,symptom) VALUES(144,"problem with speech or swallowing");
 INSERT INTO symptoms(id,symptom) VALUES(145,"edema");
 INSERT INTO symptoms(id,symptom) VALUES(146,"diarrhea");
+INSERT INTO symptoms(id,symptom) VALUES(147,"hard stool");
+INSERT INTO symptoms(id,symptom) VALUES(148,"straining to have bowel movements");
+INSERT INTO symptoms(id,symptom) VALUES(149,"urinating often");
+INSERT INTO symptoms(id,symptom) VALUES(150,"back pain");
+INSERT INTO symptoms(id,symptom) VALUES(151,"yellowish tinge to the eyes");
 
 /* symptoms and body part */
 
@@ -748,6 +753,7 @@ INSERT INTO causes(id,illness,bodyp_id) VALUES(140,"Pancreatitis",20);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(141,"EAR",20);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(142,"Cystic Fibrosis",20);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(143,"Pancreatic Cancer",20);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(144,"EPI",20);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(145,"Diabetes",20);
 
 /* common gallbladder problems */
@@ -1885,4 +1891,163 @@ INSERT INTO suspect(cause_id,symptom_id) VALUES(130,14);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(130,60);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(130,90);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(130,99);
+
+/* stomach */
+
+/* Rheumatoid Gastroesophageal Reflux Disease */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(131,91);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(131,107);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(131,109);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(131,144);
+
+/* Peptic Ulcer Disease */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(132,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(132,18);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(132,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(132,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(132,110);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(132,111);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(132,112);
+
+/* Stomach Flu */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(133,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(133,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(133,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(133,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(133,146);
+
+/* Gluten Sensitivity and Celiac Disease */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(134,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(134,28);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(134,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(134,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(134,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(134,146);
+
+/* Inflammatory Bowel Disease (IBD) */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(135,2); 
+INSERT INTO suspect(cause_id,symptom_id) VALUES(135,60); 
+INSERT INTO suspect(cause_id,symptom_id) VALUES(135,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(135,146);
+
+/* Irritable Bowel Syndrome (IBS) */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(136,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(136,28);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(136,146);
+
+/* Constipation */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(137,147);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(137,148);
+
+/* Stomach Cancer */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(138,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(138,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(138,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(138,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(138,107);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(138,110);
+
+/* pancreas */
+
+/* Pancreas Malfunction */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(139,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(139,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(139,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(139,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(139,28);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(139,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(139,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(139,146);
+
+/* Pancreatitis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(140,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(140,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(140,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(140,22);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(140,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(140,130);
+
+/* EAR */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(141,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(141,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(141,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(141,110);
+
+/* Cystic Fibrosis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(142,10);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(142,91);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(142,115);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(142,117);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(142,146);
+
+/* Pancreatic Cancer */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(143,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(143,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(143,38);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(143,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(143,90);
+
+/* EPI */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(144,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(144,28);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(144,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(144,146);
+
+
+/* Diabetes */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(145,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(145,37);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(145,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(145,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(145,132);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(145,149);
+
+/* gallbladder */
+
+/* Gallstones */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(146,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(146,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(146,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(146,150);
+
+/* Cholecystitis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(147,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(147,38);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(147,43);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(147,110);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(147,120);
+
+/* Choledocholithiasis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(148,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(148,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(148,38);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(148,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(148,110);
+
+/* Acalculous Gallbladder Disease */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(149,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(149,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(149,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(149,28);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(149,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(149,151);
 
