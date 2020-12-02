@@ -242,6 +242,19 @@ INSERT INTO symptoms(id,symptom) VALUES(148,"straining to have bowel movements")
 INSERT INTO symptoms(id,symptom) VALUES(149,"urinating often");
 INSERT INTO symptoms(id,symptom) VALUES(150,"back pain");
 INSERT INTO symptoms(id,symptom) VALUES(151,"yellowish tinge to the eyes");
+INSERT INTO symptoms(id,symptom) VALUES(152,"usually no major symptoms");
+INSERT INTO symptoms(id,symptom) VALUES(153,"bloody urine");
+INSERT INTO symptoms(id,symptom) VALUES(154,"insomnia");
+INSERT INTO symptoms(id,symptom) VALUES(155,"testicles pain");
+INSERT INTO symptoms(id,symptom) VALUES(156,"high blood pressure");
+INSERT INTO symptoms(id,symptom) VALUES(157,"feeling of fullness in the abdomen");
+INSERT INTO symptoms(id,symptom) VALUES(158,"increased size in the abdomen");
+INSERT INTO symptoms(id,symptom) VALUES(159,"decreased urine output");
+INSERT INTO symptoms(id,symptom) VALUES(160,"fluid retention");
+INSERT INTO symptoms(id,symptom) VALUES(161,"constipation");
+INSERT INTO symptoms(id,symptom) VALUES(162,"dark or bloody stool");
+INSERT INTO symptoms(id,symptom) VALUES(163,"involuntary loss of uring");
+INSERT INTO symptoms(id,symptom) VALUES(164,"sudden strong urges to pee");
 
 /* symptoms and body part */
 
@@ -784,14 +797,14 @@ INSERT INTO causes(id,illness,bodyp_id) VALUES(162,"Crohn's Disease",23);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(163,"Infections",23);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(164,"Intestinal Cancer",23);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(165,"Intestinal Obstruction",23);
-INSERT INTO causes(id,illness,bodyp_id) VALUES(166,"Irritable Bowel Dyndrome",23);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(166,"Irritable Bowel Syndrome",23);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(167,"Ulcers",23);
 
 /* common bladder problems */
 
 INSERT INTO causes(id,illness,bodyp_id) VALUES(168,"Cystitis",25);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(169,"Urinary Incontinence",25);
-INSERT INTO causes(id,illness,bodyp_id) VALUES(170,"Interstitial Cstitis",25);
+INSERT INTO causes(id,illness,bodyp_id) VALUES(170,"Interstitial Cystitis",25);
 INSERT INTO causes(id,illness,bodyp_id) VALUES(171,"Overactive Bladder",25);
 
 /* common testicules problems */
@@ -2050,4 +2063,180 @@ INSERT INTO suspect(cause_id,symptom_id) VALUES(149,13);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(149,28);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(149,48);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(149,151);
+
+/* Biliary Dyskinesia */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(150,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(150,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(150,28);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(150,48);
+
+/* Sclerosing Cholangitis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(151,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(151,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(151,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(151,68);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(151,151);
+
+/* Gallbladder Cancer */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(152,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(152,38);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(152,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(152,61);
+
+/* Gallbladder Polyps */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(153,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(153,152);
+
+/* kidneys */
+
+/* Chronic kidney disease */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(154,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(154,68);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(154,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(154,115);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(154,153);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(154,154);
+
+/* Kidney stones */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(155,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(155,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(155,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(155,120);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(155,153);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(155,155);
+
+/* Glomerulonephritis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(156,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(156,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(156,137);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(156,156);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(156,157);
+
+/* Polycystic kidney disease */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(157,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(157,39);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(157,150);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(157,153);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(157,156);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(157,158);
+
+/* Urinary tract infections */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(158,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(158,43);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(158,149);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(158,153);
+
+/* Kidney Failure */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(159,5);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(159,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(159,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(159,99);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(159,115);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(159,121);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(159,159);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(159,160);
+
+/* Kidney Cancer */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(160,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(160,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(160,75);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(160,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(160,110);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(160,153);
+
+/* small_intestin */
+
+/* Celiac Disease */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(161,28);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(161,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(161,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(161,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(161,146);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(161,161);
+
+/* Crohn's Disease */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(162,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(162,60);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(162,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(162,146);
+
+
+/* Infections */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(163,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(163,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(163,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(163,43);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(163,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(163,146);
+
+/* Intestinal Cancer */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(164,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(164,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(164,38);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(164,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(164,99);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(164,162);
+
+/* Intestinal Obstruction */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(165,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(165,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(165,28);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(165,157);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(165,161);
+
+/* Irritable Bowel Dyndrome */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(166,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(166,28);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(166,146);
+
+/* Ulcers */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(167,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(167,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(167,28);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(167,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(167,90);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(167,107);
+
+/* bladder */
+
+/* Cystitis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(168,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(168,43);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(168,149);
+
+/* Urinary Incontinence */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(169,149);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(169,163);
+
+/* Interstitial Cstitis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(170,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(170,164);
+
+/* Overactive Bladder */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(171,149);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(171,163);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(171,164);
+
 
