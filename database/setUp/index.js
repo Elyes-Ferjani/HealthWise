@@ -1,24 +1,35 @@
-const mysql = require("mysql");
+const Sequelize = require('sequelize');
+const env = process.env.NODE_ENV || 'development';
+const config = require(`${__dirname}/../../config/config.json`)[env];
+const fs = require('fs');
+const path = require('path');
+const basename = path.basename(__filename);
 
-// database connection:
+let sequelize;
+let db = {};
 
-const connection = mysql.createConnection({
+if(config.use_env_variable){
+  sequelize = new Sequelize(process.env[config.use_env_variable], config)
+}else{
+  sequlize = new Sequelize(config.database, config.username, config.password, config, {
+    omitNull: true,
+  })
+};
 
-  host: "localhost",
-  user: "root",
-  password: "root",
-  database: "healthwise",
-  insecureAuth: true,
-
+fs.readdirSync(`${__dirname}/../models`)
+.filter(file=> (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js'))
+.forEach(file=>{
+  const model = sequelize.import(path.join(__dirname,file))
+  db[model.name] = file
 });
 
-// connect to database:
-
-connection.connect((err) => {
-
-    if (err) throw err;
-    console.log("Database connected");
-    
+Object.keys(db).forEach(modelName=>{
+  if(db[modelName].associate){
+    db[modelName].associate(db)
+  }
 });
 
-module.exports.connection = connection;
+db.sequlize = sequelize;
+db.Sequelize = Sequelize;
+
+module.exports = db;
