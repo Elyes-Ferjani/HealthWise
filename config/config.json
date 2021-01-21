@@ -1,0 +1,29 @@
+{
+  "development": {
+    "url": "jdbc:mysql://localhost:3306/healthwise",
+    "username": "root",
+    "password": "123",
+    "database": "healthwise",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "test": {
+    "url": "jdbc:mysql://localhost:3306/healthwise",
+    "username": "root",
+    "password": "123",
+    "database": "healthwise",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "production": {
+    "url": "jdbc:mysql://localhost:3306/healthwise",
+    "username": "root",
+    "password": "123",
+    "database": "healthwise",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
+  }
+}
