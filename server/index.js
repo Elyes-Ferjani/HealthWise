@@ -2,8 +2,9 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const uuid = require('uuid');
-const compression = require('conpression');
-const db = require('../database/setUp/index')
+const compression = require('compression');
+const db = require('../database/setUp/index');
+const config = require('../config/appConfig');
 const helmet = require('helmet');
 
 // initiate a server connection
