@@ -12,14 +12,14 @@ const app = express();
 
 // server setups
 app.set('config',config);
-app.set('port',process.env.DEV-APP-PORT);
+// app.set('port',process.env.DEV-APP-PORT);
 app.set('db',db);
 
 // protection middleware
 app.use(helmet());
 
 // middlewares
-app.use(require('method-overide')())
+app.use(require('method-override')())
 app.use(cors());
 app.use(bodyParser.json());
 app.use(compression());
