@@ -27,7 +27,7 @@ class RequestHandler{
     }
 
     sendSuccess(res,message,status){
-        this.logger.log(`A request has been made and proccessed successfully at ${new Date()}`, `info`);
+        this.logger.infoLogger.log({level: 'info', message: `A request has been made and proccessed successfully at ${new Date()}`});
         return (data, globalData)=>{
             if(_.isUndefined(status)){
                 status = 200
@@ -42,7 +42,7 @@ class RequestHandler{
     }
 
     sendError(req,res,error){
-        this.logger.log(`error, error during processing request: ${req.protocol}://${req.get('host')}${req.originalUrl} , message details: ${error.message}`, 'error')
+        this.logger.errorLogger.log({level: 'error', message:`error, error during processing request: ${req.protocol}://${req.get('host')}${req.originalUrl} , message details: ${error.message}`})
         return res.status(error.status || 500).json({
             type: 'error',
             message: error.message || 'Unhandled error',
@@ -51,4 +51,4 @@ class RequestHandler{
     }
 }
 
-module.export = RequestHandler
+module.exports = RequestHandler

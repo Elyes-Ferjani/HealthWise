@@ -16,12 +16,12 @@ if(config.use_env_variable){
   })
 };
 
-fs.readdirSync(`${__dirname}/../models`)
-.filter(file=> (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js'))
-.forEach(file=>{
-  const model = sequelize.import(path.join(__dirname,file))
-  db[model.name] = file
-});
+// fs.readdirSync(`${__dirname}/../models`)
+// .filter(file=> (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js'))
+// .forEach(file=>{
+//   const model = sequelize.import(path.join(__dirname,file))
+//   db[model.name] = file
+// });
 
 Object.keys(db).forEach(modelName=>{
   if(db[modelName].associate){

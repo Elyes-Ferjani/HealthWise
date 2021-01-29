@@ -15,7 +15,7 @@ module.exports = {
         status: 403
     },
 
-    NotFoung: {
+    NotFound: {
         error: 'Not Found',
         status: 404
     },
