@@ -1,0 +1,24 @@
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: req.app.get(...)[modelName].findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: req.app.get(...)[modelName].findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: Body.findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: Body.find is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: req.app.get(...)[modelName].findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: req.app.get(...)[modelName].findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: req.app.get(...)[modelName].findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: Body.findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: Body.findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: Body.findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: req.app.get(...)[modelName].findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: req.app.get(...)[modelName].findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: req.app.get(...)[modelName].findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: req.app.get(...)[modelName].findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: req.app.get(...)[modelName].findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: req.app.get(...)[modelName].findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: req.app.get(...)[modelName].findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: req.app.get(...)[modelName].findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: req.app.get(...)[modelName].findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: req.app.get(...)[modelName].findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: req.app.get(...)[modelName].findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: \"body\".findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: req.app.get(...)[modelName].findAll is not a function"}

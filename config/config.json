@@ -1,6 +1,6 @@
 {
   "development": {
-    "url": "jdbc:mysql://localhost:3306/healthwise",
+    "url": "mysql://localhost:3306/healthwise",
     "username": "root",
     "password": "123",
     "database": "healthwise",
@@ -9,7 +9,7 @@
     "dialect": "mysql"
   },
   "test": {
-    "url": "jdbc:mysql://localhost:3306/healthwise",
+    "url": "mysql://localhost:3306/healthwise",
     "username": "root",
     "password": "123",
     "database": "healthwise",
@@ -18,7 +18,7 @@
     "dialect": "mysql"
   },
   "production": {
-    "url": "jdbc:mysql://localhost:3306/healthwise",
+    "url": "mysql://localhost:3306/healthwise",
     "username": "root",
     "password": "123",
     "database": "healthwise",

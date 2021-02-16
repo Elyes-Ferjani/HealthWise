@@ -11,7 +11,6 @@ class BodyParts extends BaseController {
     static async getBody(req,res) {
         try {
             const result = await super.getBody(req, 'body');
-            console.log(result)
             return requestHandler.sendSuccess(res, 'Main BodyPart Data Extracted')({ result })
         } catch(error){
             return requestHandler.sendError(req,res,error)

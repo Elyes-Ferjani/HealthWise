@@ -1,0 +1,7 @@
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: Body.findAll is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: Cannot read property 'findAll' of undefined"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: Cannot read property 'findAll' of undefined"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: Cannot read property 'findAll' of undefined"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: Cannot read property 'findAll' of undefined"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: Cannot read property 'findAll' of undefined"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/parts , message details: Cannot read property 'findAll' of undefined"}

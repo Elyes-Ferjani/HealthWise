@@ -1,4 +1,6 @@
-module.exports = (sequelize, DataTypes) => {
+const DataTypes = require('sequelize/lib/data-types')
+
+module.exports = (sequelize) => {
     const body = sequelize.define('body', {
         id: {
             type: DataTypes.INTEGER(11),
@@ -10,7 +12,10 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false,
         }
-    }, {})
+    },{
+        tableName: 'body',
+        timestamps: false
+    })
 
     return body;
 }

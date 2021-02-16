@@ -35,6 +35,6 @@ app.use((req, res, next) => {
 });
 
 // routers
-app.use(require('./router/api/bodyRouter'))
+app.use(require('./router/index'))
 
 module.exports= app
