@@ -1,0 +1,8 @@
+{"level":"error","message":"error, error during processing request: http://localhost:3000/api/body/mainparts , message details: Cannot read property 'findAll' of undefined"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/api/body/mainparts , message details: Cannot read property 'findAll' of undefined"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/api/body/organparts/1 , message details: req.app.get(...)[modelName].find is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/api/body/organparts/1 , message details: req.app.get(...)[modelName].find is not a function"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/api/body/organparts/2 , message details: Cannot read property 'findAll' of undefined"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/api/body/organparts/1 , message details: Cannot read property 'findAll' of undefined"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/api/body/organparts/1 , message details: Cannot read property 'findAll' of undefined"}
+{"level":"error","message":"error, error during processing request: http://localhost:3000/api/body/organparts/1 , message details: Cannot read property 'findAll' of undefined"}
