@@ -33,7 +33,6 @@ app.use((req, res, next) => {
 	logger.infoLogger.log({level: 'info', message: logString});
 	next();
 });
-
 // routers
 app.use(require('./router/index'))
 
