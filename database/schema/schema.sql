@@ -255,6 +255,14 @@ INSERT INTO symptoms(id,symptom) VALUES(161,"constipation");
 INSERT INTO symptoms(id,symptom) VALUES(162,"dark or bloody stool");
 INSERT INTO symptoms(id,symptom) VALUES(163,"involuntary loss of uring");
 INSERT INTO symptoms(id,symptom) VALUES(164,"sudden strong urges to pee");
+INSERT INTO symptoms(id,symptom) VALUES(165,"abdominal pain");
+INSERT INTO symptoms(id,symptom) VALUES(166,"frequent peeing");
+INSERT INTO symptoms(id,symptom) VALUES(167,"dilated veins in the scrotum");
+INSERT INTO symptoms(id,symptom) VALUES(168,"heaviness in the testicule and fullness");
+INSERT INTO symptoms(id,symptom) VALUES(169,"painless lump");
+INSERT INTO symptoms(id,symptom) VALUES(170,"flood buildup");
+INSERT INTO symptoms(id,symptom) VALUES(171,"vagina discharge discoloration");
+INSERT INTO symptoms(id,symptom) VALUES(172,"pain during intercourse");
 
 /* symptoms and body part */
 
@@ -2239,4 +2247,63 @@ INSERT INTO suspect(cause_id,symptom_id) VALUES(171,149);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(171,163);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(171,164);
 
+/* common testicules problems */
+
+/* Epididymitis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(172,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(172,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(172,130);
+
+/* Hydrocele */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(173,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(173,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(173,130);
+
+/* Testicular torsion */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(174,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(174,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(174,13);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(174,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(174,48);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(174,166);
+
+/* Varicocele */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(175,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(175,4);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(175,167);
+
+/* Orchitis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(176,1);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(176,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(176,3);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(176,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(176,48);
+
+/* Spermatocele */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(177,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(177,168);
+
+/* Testicule Cancer */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(178,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(178,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(178,14);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(178,169);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(178,170);
+
+/* common vagina problems */
+
+/* Infections */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(179,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(179,36);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(179,68);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(179,171);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(179,172);
 
