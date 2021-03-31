@@ -1,0 +1,1 @@
+{"level":"error","message":"error, error during processing request: http://localhost:3000/api/body/2 , message details: sympt_id is not defined"}
