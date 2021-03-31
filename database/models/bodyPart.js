@@ -1,5 +1,4 @@
 const DataTypes = require('sequelize/lib/data-types')
-const body = require('./body')
 
 module.exports = (sequelize) => {
     const bodypart = sequelize.define('bodypart', {
@@ -22,7 +21,5 @@ module.exports = (sequelize) => {
         tableName: 'bodypart',
         timestamps: false
     })
-    // body.hasMany(bodyParts)
-    // bodyParts.belongsTo(body)
     return bodypart;
 }

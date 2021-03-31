@@ -1,0 +1,10 @@
+const BodyPart = require('../models/body')
+const BodyOrgan = require('../models/bodyPart')
+const Symptoms = require('../models/symptoms')
+const CommonSymptoms = require('../models/commonSymptoms')
+
+BodyPart.hasMany(BodyOrgan)
+BodyOrgan.belongsTo(BodyPart)
+BodyOrgan.hasMany(Symptoms)
+CommonSymptoms.hasMany(Symptoms)
+CommonSymptoms.hasMany(BodyOrgan)
