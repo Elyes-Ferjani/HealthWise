@@ -1,0 +1,1 @@
+{"level":"error","message":"error, error during processing request: http://localhost:3000/api/body/1 , message details: Unknown column 'id' in 'field list'"}

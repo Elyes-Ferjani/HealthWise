@@ -34,6 +34,7 @@
     "winston-daily-rotate-file": "^4.5.0"
   },
   "devDependencies": {
+    "@types/sequelize": "^4.28.10",
     "nodemon": "^2.0.6",
     "sequelize-cli": "^6.2.0"
   }
