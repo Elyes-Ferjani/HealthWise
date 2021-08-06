@@ -263,6 +263,10 @@ INSERT INTO symptoms(id,symptom) VALUES(169,"painless lump");
 INSERT INTO symptoms(id,symptom) VALUES(170,"flood buildup");
 INSERT INTO symptoms(id,symptom) VALUES(171,"vagina discharge discoloration");
 INSERT INTO symptoms(id,symptom) VALUES(172,"pain during intercourse");
+INSERT INTO symptoms(id,symptom) VALUES(173,"painful urination");
+INSERT INTO symptoms(id,symptom) VALUES(174,"vaginal discharge");
+INSERT INTO symptoms(id,symptom) VALUES(175,"bleeding between periods and after intercourse");
+INSERT INTO symptoms(id,symptom) VALUES(176,"burn sensation");
 
 /* symptoms and body part */
 
@@ -2306,4 +2310,25 @@ INSERT INTO suspect(cause_id,symptom_id) VALUES(179,36);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(179,68);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(179,171);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(179,172);
+
+/* chlamydia */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(180,172);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(180,173);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(180,174);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(180,175);
+
+/* gonorrhoea */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(181,2);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(181,174);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(181,176);
+
+/* trichomoniasis */
+
+INSERT INTO suspect(cause_id,symptom_id) VALUES(182,68);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(182,173);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(182,174);
+INSERT INTO suspect(cause_id,symptom_id) VALUES(182,176);
+
 
