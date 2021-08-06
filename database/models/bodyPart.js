@@ -21,5 +21,12 @@ module.exports = (sequelize) => {
         tableName: 'bodypart',
         timestamps: false
     })
+    bodypart.associate = models =>{
+        // bodypart.belongsTo(models.body),
+        bodypart.belongsToMany(models.symptoms,{
+            through: models.commonsymptoms,
+            foreignKey: 'bdpart_id'
+        })
+    }
     return bodypart;
 }

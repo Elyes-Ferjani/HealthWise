@@ -15,6 +15,12 @@ module.exports = (sequelize) => {
     },{
         tableName: 'body',
         timestamps: false
-    })
+    });
+
+    body.associate = models =>{
+        body.hasMany(models.bodypart,{
+            foreignKey: 'body_id'
+        })
+    }
     return body;
 }
