@@ -6,12 +6,20 @@ module.exports = {
       sympt_id: {
         type: Sequelize.INTEGER(11),
         allowNull: false,
-        foreignKey: true,
+        pimaryKey: true,
+        references: {
+          model: 'symptoms',
+          key: 'id'
+        }
       },
       bdpart_id: {
         type: Sequelize.INTEGER(11),
         allowNull: false,
-        foreignKey: true,
+        primarKey: true,
+        references: {
+          model: 'bodypart',
+          key: 'id'
+        }
       }
     }, {
       tableName: 'commonsymptoms',
