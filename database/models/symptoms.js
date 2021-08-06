@@ -20,6 +20,10 @@ module.exports = (sequelize) => {
             through: models.commonsymptoms,
             foreignKey: 'sympt_id'
         })
+        symptoms.belongsToMany(models.causes, {
+            through: models.suspect,
+            foreignKey: 'symptom_id'
+        })
     }
     return symptoms;
 }

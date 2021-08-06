@@ -1,34 +1,33 @@
 const DataTypes = require('sequelize/lib/data-types')
 
 module.exports = (sequelize) => {
-    const bodypart = sequelize.define('bodypart', {
+    const causes = sequelize.define('causes', {
         id: {
             type: DataTypes.INTEGER(11),
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
         },
-        organ: {
+        illness: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        body_id: {
+        bodyp_id: {
             type: DataTypes.INTEGER(11),
             allowNull: false,
             foreignKey: true
         }
-    },{
-        tableName: 'bodypart',
+    }, {
+        tableName: 'causes',
         timestamps: false
     })
-    bodypart.associate = models =>{
-        bodypart.hasMany(models.causes,{
-            foreignKey: 'bodyp_id'
-        })
-        bodypart.belongsToMany(models.symptoms,{
-            through: models.commonsymptoms,
-            foreignKey: 'bdpart_id'
+
+    causes.associate = models => {
+        causes.belongsToMany(models.symptoms, {
+            through: models.suspect,
+            foreignKey: 'cause_id'
         })
     }
-    return bodypart;
+
+    return causes;
 }
