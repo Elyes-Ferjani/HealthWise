@@ -97,3 +97,72 @@
 {"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 14:56:55 GMT+0200 (heure d’été d’Europe centrale)"}
 {"level":"info","message":"a request has been made with the following uuid [865ea520-ce38-4f08-ab8e-c6a95f8a596d] /api/body/1 PostmanRuntime/7.26.8 {}"}
 {"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 14:57:29 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [7654f10d-3809-4a16-89bb-40fa314b7fb9] /api/body/organparts/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"a request has been made with the following uuid [2935720e-fdc5-4b7a-9d8c-7b9f132a5200] /api/body/organparts/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"a request has been made with the following uuid [2f551db1-c9a3-4bb8-953c-20fa54fbe2a6] /api/body/organparts/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"a request has been made with the following uuid [50a90296-594e-4147-b8a9-9137bc36ee1e] /api/body/organparts/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"a request has been made with the following uuid [ff3912ad-63a3-4ec6-aeca-09623de78afb] /api/body/organparts/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"a request has been made with the following uuid [6882a43a-fbae-4420-aa0b-bcbcd4de4aa8] /api/body/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:24:40 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [766fa348-07ea-41d6-8fb4-8e7361945d3f] /api/body/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:24:47 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [52f25a0f-7994-472e-9702-b50347019883] /api/body/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:24:48 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [ccbcf2db-1df4-4849-b1be-58a27f4a205c] /api/body/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:24:49 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [9bdce960-f548-47d4-99a9-31f70315fc08] /api/body/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:24:52 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [76132680-b0da-49c7-90f7-913c7e93a29e] /api/body/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:24:53 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [ec9f6709-af03-406e-ad1a-5bd89fcd88c2] /api/body/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:24:54 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [8f0448c2-1b07-4e98-bd9c-5de06b897e7e] /api/body/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:24:54 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [e74ca21b-2586-4bab-8dd9-2b42bf94313a] /api/body/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:25:18 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [dc4245ef-e72f-46f8-922f-b4e99bdc383a] /api/body/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:25:29 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [01100183-1ddb-4294-a7ae-c8ba6d850038] /api/body/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:26:08 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [2de31c10-649b-4a96-9d32-28cd0084995f] /api/ogranparts/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"a request has been made with the following uuid [fd8f0036-fe19-4e49-b23b-26e28de35683] /api/body/ogranparts/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"a request has been made with the following uuid [499d91a7-eda1-495b-a6b6-09e2246b8822] /api/body/ogranparts/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"a request has been made with the following uuid [1933848a-d86f-472c-81d7-fac34f78f64a] /api/body/ogranparts/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"a request has been made with the following uuid [16bb2af5-0d7b-4f62-ab86-43d214e3058d] /api/body/2 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:35:26 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [d41cb8de-43e7-4fdb-96ce-b67a13bb6e21] /api/body/organparts/1 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:35:41 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [3716c0bd-5729-479f-936b-788db00bd71d] /api/body/causes/1 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"a request has been made with the following uuid [f48324d8-efb4-4b4f-9015-7984be27b04e] /api/body/causes/1 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"a request has been made with the following uuid [f4cde9e9-d74d-4df2-9ab9-6461916fdbb3] /api/body/causes/1 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:46:13 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [d49f2c47-ce65-42d9-9f22-7aae4c1c261f] /api/body/disease/1 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:54:10 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [b47a3cef-0904-4d21-bf07-890876947691] /api/body/disease/1 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:56:42 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [defdb859-0428-496a-b414-7df54f4db875] /api/body/disease/1 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:56:43 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [f600c06d-f7be-4f82-858d-ad6aa4a3123c] /api/body/disease/1 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:58:24 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [1f982172-e6b3-43b2-bb71-4a23896f49f8] /api/body/disease/1 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 21:59:51 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [42c3965d-15bf-47aa-9754-32e97c60920f] /api/body/disease/1 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 22:01:31 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [f26d953a-0cea-4935-b718-ae871ae38809] /api/body/disease/1 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 22:02:13 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [23f4aa49-eb53-47e2-9c14-574d12f58de4] /api/body/disease/1 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 22:02:48 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [254e72e9-cc6b-40e8-bcb1-3775e0542906] /api/body/disease/1 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 22:02:49 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [02ab6799-79e3-44be-a6ba-198f816da5bc] /api/body/disease/1 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 22:02:50 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [eb7df7e2-f6da-4a53-8be6-51239a4ce90c] /api/body/disease/1 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 22:02:51 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [dfb5374d-3686-4cd8-9f6e-c4fb5c3196b8] /api/body/disease/1 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 22:03:11 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [003ffc16-054f-4d42-8491-87514434ab86] /api/body/disease/1 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 22:07:34 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [92425a80-a511-4da5-aa5d-9829df5fd7e5] /api/body/disease/1 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 22:08:00 GMT+0200 (heure d’été d’Europe centrale)"}
+{"level":"info","message":"a request has been made with the following uuid [c18c76f7-16a5-4981-ad02-e45fb623bdaa] /api/body/disease/10 PostmanRuntime/7.26.8 {}"}
+{"level":"info","message":"A request has been made and proccessed successfully at Fri Aug 06 2021 22:08:20 GMT+0200 (heure d’été d’Europe centrale)"}
