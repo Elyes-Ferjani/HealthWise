@@ -6,6 +6,7 @@ const symptoms = require('../models/symptoms')(sequelize);
 const Body = require('../models/body')(sequelize)
 const commonSymptoms = require('../models/commonSymptoms')(sequelize)
 const bodyPart = require('../models/bodyPart')(sequelize)
+const causes = require('../models/causes')(sequelize)
 
 const logger = new Logger();
 const errorHandler = new RequestHandler(logger);
@@ -33,7 +34,7 @@ class BaseController {
         let result;
         const id = req.params.partId;
         try {
-            result = await req.app.get('db')['models'][modelName].findAll({ where: { body_id: id } }).catch(() => {
+            result = await req.app.get('db')[modelName].findAll({ include: [{ model : bodyPart }], where: { id: id } }).catch(() => {
                 errorHandler.throwIf(r => !r, 400, 'not found', 'Resource not found'),
                     errorHandler.throwError(500, 'sequelize error, some thing wrong with either the database connection or schema')
             })
@@ -48,7 +49,7 @@ class BaseController {
         const id = req.params.organId;
         try {
 
-            result = await req.app.get('db')[modelName].findAll({ include: [{ model: symptoms }], where: {body_id: 1}}).catch(() => {
+            result = await req.app.get('db')[modelName].findAll({ include: [{ model: symptoms }], where: { id: id }}).catch(() => {
                 errorHandler.throwIf(r => !r, 400, 'not found', 'Resource not found'),
                     errorHandler.throwError(500, 'sequelize error, some thing wrong with either the database connection or schema')
             })
@@ -56,7 +57,37 @@ class BaseController {
         } catch (error) {
             return Promise.reject(error)
         }
-        console.log(result)
+        return result
+    }
+
+    static async getCauses(req, modelName) {
+        console.log('here')
+        let result;
+        const id = req.params.bodyparId;
+        try {
+            result = await req.app.get('db')[modelName].findAll({ include: [{ model : causes }], where: { id: id } }).catch(() => {
+                errorHandler.throwIf(r => !r, 400, 'not found', 'Resource not found'),
+                    errorHandler.throwError(500, 'sequelize error, some thing wrong with either the database connection or schema')
+            })
+        } catch (error) {
+            return Promise.reject(error)
+        }
+        return result
+    }
+
+    static async getDisease(req, modelName, Model) {
+        let result;
+        const id = req.params.causeId;
+        try {
+
+            result = await req.app.get('db')[modelName].findAll({ include: [{ model: symptoms }], where: { id: id }}).catch(() => {
+                errorHandler.throwIf(r => !r, 400, 'not found', 'Resource not found'),
+                    errorHandler.throwError(500, 'sequelize error, some thing wrong with either the database connection or schema')
+            })
+
+        } catch (error) {
+            return Promise.reject(error)
+        }
         return result
     }
 }
