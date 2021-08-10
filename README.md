@@ -1,4 +1,4 @@
-![Screenshot](./logo/healthwise.png)
+![Screenshot](./logo/Healthwise.png)
 
 # Healthwise API
 
