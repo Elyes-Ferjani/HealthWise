@@ -1,3 +1,5 @@
+![Screenshot](./logo/healthwise.png)
+
 # Healthwise API
 
 [Healthise](https://github.com/Elyes-Ferjani/HealthWise) is a rest API made for heath, search and medical purpose, it's provides a json format response with 
