@@ -69,7 +69,7 @@ To stop Docker Compose, on your terminal window, press **Ctrl + C**.
 To remove the produced images run:
 
 ```console
-docker rm
+docker rm container
 ```
 For more information see the [Docker Compose
 documentation](https://docs.docker.com/compose/gettingstarted/).
