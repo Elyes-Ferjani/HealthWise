@@ -1,6 +1,6 @@
 DROP DATABASE IF EXISTS healthwise ;
 
-CREATE DATABASE healthwise ;
+CREATE DATABASE healthwise DEFAULT CHARACTER SET latin1;
 
 USE healthwise ;
 
@@ -8,7 +8,7 @@ CREATE TABLE body (
     id int NOT NULL AUTO_INCREMENT,
     part varchar(20) NOT NULL,
     PRIMARY KEY (id)
-);
+)ENGINE=InnoDB;
 
 
 CREATE TABLE bodypart(
@@ -17,13 +17,13 @@ CREATE TABLE bodypart(
     body_id int NOT NULL,
     PRIMARY KEY (id),
     CONSTRAINT FK_bodyID FOREIGN KEY (body_id) REFERENCES body(id)
-);
+)ENGINE=InnoDB;
 
 CREATE TABLE symptoms(
     id int NOT NULL AUTO_INCREMENT,
     symptom varchar(200) NOT NULL,
     PRIMARY KEY (id)
-);
+)ENGINE=InnoDB;
 
 CREATE TABLE causes(
     id int NOT NULL AUTO_INCREMENT,
@@ -31,21 +31,27 @@ CREATE TABLE causes(
     bodyp_id int NOT NULL,
     PRIMARY KEY (id),
     CONSTRAINT FK_bodypID FOREIGN KEY (bodyp_id) REFERENCES bodypart (id)
-);
+)ENGINE=InnoDB;
 
 CREATE TABLE commonsymptoms(
     sympt_id int NOT NULL,
     bdpart_id int NOT NULL,
     CONSTRAINT FK_symptID FOREIGN KEY (sympt_id) REFERENCES symptoms (id),
     CONSTRAINT FK_bdpartID FOREIGN KEY (bdpart_id) REFERENCES bodypart (id)
-);
+)ENGINE=InnoDB;
 
 CREATE TABLE suspect(
     cause_id int NOT NULL,
     symptom_id int NOT NULL,
     CONSTRAINT FK_causeID FOREIGN KEY (cause_id) REFERENCES causes(id),
     CONSTRAINT FK_symptomID FOREIGN KEY (symptom_id) REFERENCES symptoms(id)
-);
+)ENGINE=InnoDB;
+
+----------------------------------------------------------------------------
+-- Starting DB Transaction
+----------------------------------------------------------------------------
+
+START TRANSACTION;
 
 INSERT INTO body(id,part) VALUES(1,"head");
 INSERT INTO body(id,part) VALUES(2,"upperbody");
@@ -2331,4 +2337,8 @@ INSERT INTO suspect(cause_id,symptom_id) VALUES(182,173);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(182,174);
 INSERT INTO suspect(cause_id,symptom_id) VALUES(182,176);
 
+---------------------------------------------------------
+-- COMMIT TRANSACTION
+---------------------------------------------------------
 
+COMMIT;
